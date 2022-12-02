@@ -15,7 +15,7 @@ app.get('/', (req, res, next) => {
 
 app.post('/upload', async(req, res, next) => {
   const file = req.files.file
-  await file.mv(path.join(__dirname,'static/files', file.name))
+  await file.mv(path.join(__dirname,'static/uploads', file.name))
   res.render('index', {imgname: file.name})
 
   //multiple images first make input attr to multiple

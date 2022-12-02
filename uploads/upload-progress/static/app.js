@@ -14,9 +14,6 @@ const fileIcons = (param) => {
   }
 };
 
-// form.addEventListener('click', (e => {
-//   file.click()
-// }))
 file.addEventListener("change", (e) => {
   if (e.target.files[0]) {
     let fileName = e.target.files[0].name;
