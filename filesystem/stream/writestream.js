@@ -1,8 +1,8 @@
 const fs = require("fs");
-const rs = fs.createReadStream("https://www.youtube.com/watch?v=QCnpi9YDeA0&list=PLhDf3-oR4mYjfRkT2r6LpC3UDW6NM05Qg&ab_channel=MarkKulek");
-const ws = fs.createWriteStream("./new2.mp4");
+const rs = fs.createReadStream("./readed-video.mp4");
+const ws = fs.createWriteStream("./new1.mp4")//create new from readed video
 
-fs.stat("./video.mp4", (err, data) => {
+fs.stat("./readed-video.mp4", (err, data) => {
   const total = data.size;
   let prograss = 0;
 
