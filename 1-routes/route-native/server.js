@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs')
 
 const server = http.createServer((req, res) => {
-  if (req.url == '/') {
+  if (req.url == '/' && req.method == 'GET) {
     fs.readFile('index.html', (req, data) => {
       res.end(data)
     })

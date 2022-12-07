@@ -3,7 +3,7 @@ import fs from 'fs'
 
 
 http.createServer((req, res) => {
-  if(req.method == 'GET'){
+  if(req.url == '/' && req.method == 'GET){
     res.end(fs.readFileSync('index.html'))
   }
 }).listen(3000, () => {
