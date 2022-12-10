@@ -1,4 +1,4 @@
-const request = require('sync-request')
+import request from 'sync-request'
 function getApi() {
   const result = request('GET', 'https://jsonplaceholder.typicode.com/users')
   return JSON.parse(result.getBody('utf8'))

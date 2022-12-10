@@ -1,6 +1,6 @@
-const express = require('express')
+import express from 'express'
 const app = express()
-const { fork } = require('child_process')
+import { fork } from 'child_process'
 
 app.get('/', (req, res) => {
   const child = fork('./api.js')
