@@ -6,7 +6,7 @@ function getApi() {
 
 process.on('message', (message) => {
   if (message === 'start') {
-    const sum = getApi()
-    process.send(sum)
+    const data = getApi()
+    process.send(data)
   }
 })

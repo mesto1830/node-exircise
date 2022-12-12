@@ -6,8 +6,8 @@ app.get('/', (req, res) => {
   const child = fork('./api.js')
   child.send('start')
 
-  child.on('message', (sum) => {
-    res.send({ sum })
+  child.on('message', (data) => {
+    res.send({ data })
   })
 })
 
