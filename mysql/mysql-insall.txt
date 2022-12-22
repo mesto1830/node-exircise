@@ -1,3 +1,8 @@
+lsof -i TCP:3306
+kill -9 pid
+
+sudo netstat -nlpt |grep 3306
+sudo service mysql stop
 some errors------------------------------------------------------------------
 systemctl unmask mysql.service
 systemctl status mysql.service
@@ -28,8 +33,7 @@ sudo mysql -u root -p
 create database gasvet;
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
 flush privileges;
-10  
-11 exit
+
 
 create private user 
 CREATE USER gasvet@localhost IDENTIFIED BY '123';
