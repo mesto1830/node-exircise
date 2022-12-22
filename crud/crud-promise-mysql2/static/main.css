@@ -76,22 +76,16 @@ table{width: 100%;}
 }
 .list-header{font-size: 24px;}
 .list{
-  display: flex;
-  align-items: center;
-  width: 100%;
   border:#ccc 1px solid;
   border-radius: 3px;
   padding:0 5px;
   box-sizing: border-box;
   margin: 3px 0;
 }
-.list > td{
-  display: flex;
-  width: 100%;
-}
 .list-header-th{
   display: flex;
-  width: 100%;
+  align-items: center;
+  width: 35%;
 }
 .form-btn-container{
   display: flex;
