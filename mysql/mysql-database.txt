@@ -3,3 +3,5 @@ mysqlcheck -u root -p --auto-repair --optimize --all-databases
 mysql -u root -p
 mysqldump -p db > db.sql --- backup
 mysql -u root -p db < db.sql --- restore
+
+SHOW DATABASES;
