@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const db = mongoose.connect('mongodb://localhost:27017/crud',{
+const db = mongoose.connect('mongodb://crud:9090@localhost:27017/crud?authSource=crud',{
   useNewUrlParser:true,
   useUnifiedTopology: true
 }).then(() => {
